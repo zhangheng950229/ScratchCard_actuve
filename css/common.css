@@ -1,0 +1,230 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q,
+blockquote {
+  quotes: none;
+}
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
+  display: block;
+}
+
+a {
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+a:hover {
+  outline: none;
+  text-decoration: none;
+}
+
+a:link {
+  outline: none;
+  text-decoration: none;
+}
+
+a:active {
+  outline: none;
+  text-decoration: none;
+}
+
+a:visited {
+  outline: none;
+  text-decoration: none;
+}
+
+input[type=button],
+input[type=submit],
+input[type=file],
+button {
+  cursor: pointer;
+  -webkit-appearance: none;
+  outline: none;
+}
+
+
+
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 13.34vw;
+  /*  750 */
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* 最外包用于更改样式覆盖增加权重 */
+#wrap {
+  font-size: 0.26rem;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: border-box;
+
+}
+
+/* 全局头部样式 */
+.head_g {
+  width: 100%;
+  height: 0.32rem;
+  background: rgba(255, 255, 255, 0.7);
+  display: none;
+}
+
+/* 主要更改的样式表 */
+/* 全局内容样式 */
+.body_wrap {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /* background: #3800a3 url(../images/bt_img.png) no-repeat left bottom;
+  background-size: 100% ; */
+  /* background: -webkit-linear-gradient(left,#f7ddc4, #fcf3ec,#f7ddc4);
+  background: -o-linear-gradient(right,#f7ddc4, #fcf3ec,#f7ddc4);
+  background: -moz-linear-gradient(right,#f7ddc4, #fcf3ec,#ffd4b2);
+  background: linear-gradient(to right,#f7ddc4, #fcf3ec,#f7ddc4); */
+  background: -webkit-linear-gradient(#ffb939 5%,#fe9941 30%, #fd5d4f 60%);
+  background: -o-linear-gradient(#ffb939 5%,#fe9941 30%, #fd5d4f 60%);
+  background: -moz-linear-gradient(#ffb939 5%,#fe9941 30%, #fd5d4f 60%);
+  background: linear-gradient(#ffb939 5%,#fe9941 30%, #fd5d4f 60%);
+}
+
+.content{
+  margin-top: -0.3rem;
+}
+/* 每页的banner图样式 */
+.banner_g {
+  width: 100%;
+  height: 4.6rem;
+  background: url(../images/banner.png) no-repeat center top;
+  background-size: 100%;
+}
+
+.banner_g img {
+  width: 100%;
+  display: block;
+}
+
+
+
+/* 全局底部样式 */
+.footer_g {
+  width: 100%;
+  height: 0.32rem;
+  background: #f0f;
+  display: none;
+}
+
+
+/* 规则样式 */
+.rule_wrap {
+  width: 85%;
+  margin: 0.6rem auto 0.2rem;
+  padding: 0.3rem 0.2rem;
+  background: url(../images/2.png) no-repeat left top;
+  background-size: 100% 100%;
+}
+
+.rule {
+
+  border-radius: 6px;
+}
+
+.rule_h {
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.36rem;
+  margin: -0.4rem auto 0.2rem;
+}
+
+.title {
+  line-height: 0.32rem;
+  text-indent: -0.4rem;
+  font-size: 0.24rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+
+
+.rule_ul {
+  padding:  0 0.1rem;
+}
+.rule_ul li{
+  padding-left: 0.3rem;
+}
+
+/* loading */
+
+.meng{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  z-index: 100;
+  display: none;
+}
+.meng img{
+  display: block;
+  margin: 72% auto 0;
+  width: 15%;
+}

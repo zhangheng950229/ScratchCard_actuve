@@ -1,0 +1,196 @@
+/* .pay_wrap {
+  background: url(../images/pay_bg.jpg) no-repeat bottom center;
+  background-size: 100%;
+} */
+
+.body {
+  padding: 0 0.5rem;
+  /* display: none; */
+}
+
+.phone,
+.captch,
+.btn_wrap {
+  margin-bottom: 0.2rem;
+}
+
+.body input {
+  height: 0.78rem;
+  width: 100%;
+  border-radius: 6px;
+  border: none;
+  box-sizing: border-box;
+  font-size: 0.32rem;
+  padding-left: 0.17rem;
+  /* box-shadow:-2px -2px 0 #df4d8c,2px -2px 0 #963bde, -2px 2px 0 #963bde, 2px 2px 0 #963bde; */
+  outline: none;
+}
+/* .body input[name='phone']{
+ 
+} */
+.captch input[name='captch_num'] {
+  width: 52%;
+}
+
+.captch .get_captch {
+  width: 43%;
+  float: right;
+  color: #fff;
+  background: url(../images/95.png) no-repeat left top;
+  background-size: 100% 100%;
+  display: none;
+}
+.captch .captcha_img{
+  width: 43%;
+  float: right;
+  box-shadow: 3px 3px 0 #6eeedf;
+  border-radius: 4px;
+  display: none;
+}
+.body input[type=button] {
+  height: 0.78rem;
+  font-weight: 600;
+  color: #fff;
+  background: -webkit-linear-gradient(#ffc05b,#fca73e, #f9952b);
+  background: -o-linear-gradient(#ffc05b,#fca73e, #f9952b);
+  background: -moz-linear-gradient(#ffc05b,#fca73e, #f9952b);
+  background: linear-gradient(#ffc05b,#fca73e, #f9952b);
+  /* background: -webkit-linear-gradient(left,#23feff, #1bdbff,#0f9fff);
+  background: -o-linear-gradient(right,#23feff, #1bdbff,#0f9fff);
+  background: -moz-linear-gradient(right,#23feff, #1bdbff,#0f9fff);
+  background: linear-gradient(to right,#23feff, #1bdbff,#0f9fff); */
+  box-shadow: 2px 2px 0 #e87900;
+}
+
+.body .btn_wrap .pay_btn{
+  background: -webkit-linear-gradient(#fdea50,#fbce33, #f9c42a);
+  background: -o-linear-gradient(#fdea50,#fbce33, #f9c42a);
+  background: -moz-linear-gradient(#fdea50,#fbce33, #f9c42a);
+  background: linear-gradient(#fdea50,#fbce33, #f9c42a);
+  /* background: -webkit-linear-gradient(left,#e1518f, #c548ae,#9a3be1);
+  background: -o-linear-gradient(right,#e1518f, #c548ae,#9a3be1);
+  background: -moz-linear-gradient(right,#e1518f, #c548ae,#9a3be1);
+  background: linear-gradient(to right,#e1518f, #c548ae,#9a3be1); */
+  box-shadow: 2px 3px 0 #fd494c;
+}
+.pay_body{
+  visibility: hidden;
+}
+ 
+
+/* 活动状态图片 */
+.acted_img {
+  width: 84%;
+  display: block;
+  margin: 0.9rem auto 1rem;
+}
+.end_img{
+  width: 60%;
+  display: block;
+  margin: 1.6rem auto;
+}
+
+/* 点击后禁止点击按钮样式 */
+
+.body .captch .disable_btn {
+  background: -webkit-linear-gradient(#d4d4d4, #a5a5a5);
+  background: -o-linear-gradient(#d4d4d4, #a5a5a5);
+  background: -moz-linear-gradient(#d4d4d4, #a5a5a5);
+  background: linear-gradient(#d4d4d4, #a5a5a5);
+  opacity: 1;
+  /* background: url(../images/94.png) no-repeat left top;
+  background-size: 100% 100%; */
+}
+
+/* .body .btn_wrap .rule_btn {
+  background: -webkit-linear-gradient(#fcd702, #bc641c);
+  background: -o-linear-gradient(#fcd702, #bc641c);
+  background: -moz-linear-gradient(#fcd702, #bc641c);
+  background: linear-gradient(#fcd702, #bc641c);
+  margin-top: 0.2rem;
+  box-shadow: 3px 3px 0px #ccc;
+} */
+
+
+.states{
+  font-size: 0.56rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 3.62rem;
+}
+
+/* 弹层 */
+.cue{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  display: none;
+}
+
+.cue_main_wrap{
+  width: 82%;
+  /* height: 2rem; */
+  box-sizing: border-box;
+  background: #fa353c;
+  border-radius: 0.1rem;
+  margin: 48% auto 0.4rem;
+  padding: 0.35rem;
+}
+
+.cue_main{
+  width: 100%;
+  height: 100%;
+  border-radius: 0.1rem;
+  background: -webkit-linear-gradient(#fff1db 40%,#fae3b8 78%, #f3cf86 100%);
+  background: -o-linear-gradient(#fff1db 40%,#fae3b8 78%, #f3cf86 100%);
+  background: -moz-linear-gradient(#fff1db 40%,#fae3b8 78%, #f3cf86 100%);
+  background: linear-gradient(#fff1db 40%,#fae3b8 78%, #f3cf86 100%);
+  box-sizing: border-box;
+  padding: 0.14rem;
+}
+.cue_content{
+  width: 100%;
+  height: 100%;
+  border: 1px double #e9bc65;
+  border-radius: 0.08rem;
+  padding: 0.3rem 0;
+}
+.qr_wrap{
+  width: 52%;
+  height: 2.8rem;
+  background: url(../images/qr_bg.png) no-repeat left top;
+  background-size: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.qr_wrap img{
+  display: block;
+  width: 84%;
+  margin: 0.2rem auto 0;
+}
+.cue_titile{
+  color: #f92520;
+  font-size: 0.32rem;
+  text-align: center;
+  line-height: 0.44rem;
+}
+
+.close_cue{
+  width: 18%;
+  height: 0.9rem;
+  margin: 0 auto;
+  background: url(../images/close.png) no-repeat center;
+  background-size: 56%;
+}
+
+
+
+
+
+
+
+

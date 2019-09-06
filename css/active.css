@@ -1,0 +1,52 @@
+
+
+.active_wrap .banner_g{
+  background: url(../images/ac_banner.png) no-repeat left top;
+  background-size: 100%;
+}
+.active_wrap .content{
+  margin-top: -1rem;
+}
+.main{
+  background: url(../images/3.png) no-repeat center 0.2rem;
+  background-size: 82%;
+  position: relative;
+  left: 0;
+  top: 0;
+  height: 4rem;
+}
+.mask{
+  display: block;
+  width: 60%;
+  height: 2.4rem;
+  position: absolute;
+  left: 19.86%;
+  top: 22.6%;
+  z-index: 99;
+}
+
+.prize{
+  text-align: center;
+  color: #9147d0;
+  padding-top: 2.3rem;
+  line-height: 0.32rem;
+  background: url(../images/4.png) no-repeat center 49%;
+  background-size: 40% 50%;
+  font-size: 0.24rem;
+}
+.prize_4{
+  background: url(../images/5.png) no-repeat center 49%;
+  background-size: 40% 50%;
+}
+.prize_3{
+  background: url(../images/6.png) no-repeat center 49%;
+  background-size: 40% 50%;
+}
+.prize_2{
+  background: url(../images/7.png) no-repeat center 49%;
+  background-size: 40% 50%;
+}
+.prize_1{
+  background: url(../images/8.png) no-repeat center 49%;
+  background-size: 40% 50%;
+}
